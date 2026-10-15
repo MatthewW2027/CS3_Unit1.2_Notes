@@ -89,6 +89,33 @@ def main():
     colors_a[colors_a.index("green")] = "turqoise"
     print(colors_a)
 
+    # we can remove an item with list.remove(item)
+    colors_a.remove("green")
+    print(colors_a)
+
+    repeats = ["book", "pencil", "folder", "book", "robot", "pen", "pencil"]
+    repeats.indexOf("pencil")
+
+
+    temp = repeats 
+    while "pencil" in temp:
+        print(temp.index("pencil"))
+        temp = temp[temp.index("pencil") + 1:]
+
+    # remove also works on the first instance of an item 
+    print(repeats)
+    repeats.remove("pencil")
+    print(repeats)
+
+    #TUPLES 
+
+    my_tuple = (2, 5, 8)
+    print(my_tuple)
+    # we can still search in our templates
+    if 5 in my_tuple:
+        print(my_tuple.index(5))
+
+
 
 
 if __name__ == "__main__":
